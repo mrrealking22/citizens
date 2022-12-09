@@ -1,0 +1,126 @@
+
+/* ========================================================================== Base Styles
+ basic tags and any universal classes (i.e. ".highlight", ".button") 
+ ========================================================================== */
+ body { font-size: 1em; line-height: 1.4; font-family: "CitiSans", Helvetica, Arial, sans-serif; color: #444; }
+
+
+/* header styles */
+h4 { color: #82c25d; margin: 0; font-size: 1.563em; font-weight: 400; line-height: 1em; }
+
+/* Link Styles */
+a { 
+    text-decoration: none; 
+    color: $color-blue; 
+}
+a:hover { text-decoration: underline; }
+
+/* Button styles */
+.submit-button, .button {
+    display: inline-block;
+    padding: 5px 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #f1912b;
+    text-align: center;
+    color: #FFF;
+    font-weight: 600;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+// ================================================
+// Base classes (for global use or extension) (CFG)
+// ================================================
+// Clearfix
+.g-cf {
+    &:before,
+    &:after {
+        display: table;
+        content: " ";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.g-margin-top-20 {
+    margin-top: 20px;
+}
+
+.g-margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.g-unauth-main-container {    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.g-left {
+    float: left;
+}
+
+.g-right {
+    float: right;
+}
+
+.g-position-relation {
+    position: relative;
+}
+
+.g-dark-grey-color {
+    color : $color-dark-grey;
+}
+
+.g-display-none {
+    display: none !important;
+}
+
+.g-display-block {
+    display : block;
+}
+
+.g-background-white {
+    background-color: $color-white;
+}
+
+.g-border-bottom {
+    border-bottom: 1px solid $color-acct-table-border;
+}
+
+.g-margin-zero {
+    margin: 0;
+}
+
+.g-margin-zero-toOverRide {
+    margin: 0 !important;
+}
+
+.g-padding-zero-toOverRide {
+    padding: 0 !important;
+}
+
+.g-border-color-red {
+    border-color: $color-red !important;
+}
+
+.g-highlight-error {
+    background-color:$color-red;;
+
+    &.-fade{
+        transition:background-color 0.5s ease;
+        background-color:$color-white;
+    }
+}
+
+
+// WEBPACK FOOTER //
+// ./src/scss/src/scss/cfg/build/_base.scss
